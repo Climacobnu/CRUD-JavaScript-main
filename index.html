@@ -13,17 +13,20 @@
 <body>
   <div class="container">
     <div class="header">
-      <span>Cadastro de Funcionários</span>
+      <span>Soluçõe de Erros</span>
       <button onclick="openModal()" id="new">Incluir</i></button>
     </div>
-
+    
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquisar">
+    
     <div class="divTable">
-      <table>
+      <table id="myTable">
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>Função</th>
-            <th>Salário</th>
+            <th>Descrição</th>
+            <th>Solução</th>
+             <th>#</th>
+            <!-- <th>Salário</th> -->
             <th class="acao">Editar</th>
             <th class="acao">Excluir</th>
           </tr>
@@ -36,13 +39,14 @@
     <div class="modal-container">
       <div class="modal">
         <form>
-          <label for="m-nome">Nome</label>
+          <label for="m-nome">Descrição</label>
           <input id="m-nome" type="text" required />
   
-          <label for="m-funcao">Função</label>
+          <label for="m-funcao">Solução</label>
           <input id="m-funcao" type="text" required />
   
-          <label for="m-salario">Salário</label>
+          <label for="m-salario">#</label>
+          <!-- <label for="m-salario">Salário</label> -->
           <input id="m-salario" type="number" required />
           <button id="btnSalvar">Salvar</button>
         </form>
@@ -51,6 +55,8 @@
 
   </div>
   <script src="script.js"></script>
+
+  
 </body>
 
 </html>
